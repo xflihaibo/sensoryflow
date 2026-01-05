@@ -1,0 +1,18 @@
+{
+  "name": "sensory-flow",
+  "version": "1.0.0",
+  "description": "SensoryFlow - 智能感官增强引擎",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-static-copy": "^1.0.6"
+  }
+}

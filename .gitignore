@@ -1,0 +1,6 @@
+# OpenMemory - IDE/Assistant specific rules
+.cursor/rules/openmemory.mdc
+.specstory
+
+dist
+node_modules

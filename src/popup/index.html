@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>SensoryFlow Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SensoryFlow</h1>
+    <div id="mode-display" class="mode-info">检测中...</div>
+
+    <div class="mode-selector">
+      <button class="mode-btn" data-mode="reading"><span>📖</span>悦读</button>
+      <button class="mode-btn" data-mode="coding"><span>💻</span>极客</button>
+      <button class="mode-btn" data-mode="creative"><span>🎨</span>灵感</button>
+      <button class="mode-btn" data-mode="zen"><span>🌸</span>禅意</button>
+      <button class="mode-btn" data-mode="galaxy"><span>🌌</span>银河</button>
+      <button class="mode-btn" data-mode="off"><span>❌</span>关闭</button>
+    </div>
+
+    <!-- 高级效果开关 -->
+    <div class="control-group" style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <span>阅读聚光灯</span>
+        <input type="checkbox" id="spotlight-toggle">
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <span>滚动速度线</span>
+        <input type="checkbox" id="velocity-toggle">
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span>时间感知滤镜</span>
+        <input type="checkbox" id="time-aware-toggle">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label for="intensity">感官强度</label>
+      <input type="range" id="intensity" min="0" max="1" step="0.1" value="0.5">
+    </div>
+  </div>
+  <script type="module" src="./index.ts"></script>
+</body>
+</html>
